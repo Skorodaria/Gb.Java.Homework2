@@ -1,0 +1,40 @@
+public class HomeWorkApp2 {
+    public static void main(String[] args) {
+        System.out.println(within10and20(4, 6));
+        System.out.println(isPositiveOrNegative(-3));
+        System.out.println(isNegative(-5));
+        printWordNTimes("Samoyed",3);
+    }
+
+    public static boolean within10and20(int x1, int x2) {
+        int value = x1 + x2;
+        if (10 <= value && value <= 20) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static int isPositiveOrNegative(int x) {
+        if (x >= 0) {
+            System.out.println("Положительное");
+        }
+        else {
+            System.out.println("Отрицательное");
+        }
+        return x;
+    }
+    public static boolean isNegative(int x) {
+        if (x<0) {
+            return true;
+        }
+        return false;
+    }
+    public static void printWordNTimes (String word, int times) {
+        for (int i = 1; i <= times; i++) {
+            System.out.println(i + "." + " " + word);
+        }
+    }
+
+
+}
